@@ -2,6 +2,7 @@ package silver;
 
 import java.io.*;
 import java.util.*;
+
 public class s_10814 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -15,12 +16,11 @@ public class s_10814 {
             strings[i][1] = st.nextToken();
         }
 
-        Arrays.sort(strings, new Comparator<String[]>() {
-            @Override
-            public int compare(String[] o1, String[] o2) {
-                return Integer.compare(Integer.parseInt(o1[0]), Integer.parseInt(o2[0]));
-            }
-        });
+        // 오름차순이 자동으로 적용되어 있어서 비교할 필요 없는 람다식
+        Arrays.sort(strings, Comparator.comparingInt(o -> Integer.parseInt(o[0])));
+
+        // 내림차순을 위한 o1, o2를 교환한 람다식
+        // Arrays.sort(strings, (o2, o1) -> Integer.compare(Integer.parseInt(o1[0]), Integer.parseInt(o2[0])));
 
         for (String[] s : strings){
             System.out.println(s[0]+" "+s[1]);
