@@ -3,6 +3,7 @@ package silver;
 import java.io.*;
 import java.util.*;
 
+// 나이순 정렬 - Comparator
 public class s_10814 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

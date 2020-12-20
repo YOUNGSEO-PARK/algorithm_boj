@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// 단어 공부 - 최빈 알파벳
 public class b_1157 {
     public static void main(String[] args) throws IOException{
 

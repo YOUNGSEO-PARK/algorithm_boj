@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// OX 퀴즈
 public class b_8958 {
     public static void main(String[] args) throws IOException {
 

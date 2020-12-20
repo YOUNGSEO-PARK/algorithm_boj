@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// 나머지
 public class b_3052 {
     public static void main(String[] args) throws IOException {
 

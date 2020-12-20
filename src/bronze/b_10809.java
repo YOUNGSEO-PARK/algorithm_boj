@@ -3,11 +3,12 @@ package bronze;
 import java.io.IOException;
 import java.util.*;
 
+// 알파벳 찾기
 public class b_10809 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        String s = new String();
-        int idx[] = new int['z'-'a'+1];
+        String s;
+        int[] idx = new int['z'-'a'+1];
         s = sc.nextLine();
 
         Arrays.fill(idx,-1);

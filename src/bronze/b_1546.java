@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// 평균
 public class b_1546 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);

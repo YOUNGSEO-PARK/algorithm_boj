@@ -3,6 +3,7 @@ package silver;
 import java.io.IOException;
 import java.util.*;
 
+// 통계학 - 최빈값
 public class s_2108 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
@@ -26,32 +27,29 @@ public class s_2108 {
         // 벡터 오름차순 정렬
         Collections.sort(v);
 
-        ans.add((int) Math.round(sum/n));
-        ans.add(v.get(n/2));
+        ans.add((int) Math.round(sum / n));
+        ans.add(v.get(n / 2));
 
-        for(int j = 0 ; j < n ; j++){
+        for (int j = 0; j < n; j++) {
             idx[4000 + v.get(j)]++;
         }
         int max = Arrays.stream(idx).max().getAsInt();
 
-        for(int k = 0 ; k < idx.length ; k++) {
+        for (int k = 0; k < idx.length; k++) {
             if (idx[k] == max) {
                 mode = k - 4000;
                 chk++;
                 if (chk == 2)
                     break;
             }
-            else
-                continue;
         }
 
         ans.add(mode);
-        ans.add(v.get(n-1)-v.get(0));
+        ans.add(v.get(n - 1) - v.get(0));
 
         for (Integer i : ans) {
             System.out.println(i);
         }
         sc.close();
     }
-
 }
