@@ -1,6 +1,6 @@
 package study;
 
-public class Quick {
+public class QuickSort {
     public static void main(String[] args) {
         int[] arr = {0, 3, -1, 4, 5, 2, 10, 1, 1, 4};
         printArray(arr);
