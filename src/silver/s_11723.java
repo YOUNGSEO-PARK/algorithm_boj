@@ -3,7 +3,7 @@ package silver;
 import java.io.*;
 import java.util.*;
 
-// 집합
+// 집합 - 비트마스크
 public class s_11723 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
