@@ -21,5 +21,6 @@ public class s_11650 {
         for (int i = 0; i < n; i++) {
             System.out.println(arr[i][0] + " " + arr[i][1]);
         }
+        sc.close();
     }
 }
