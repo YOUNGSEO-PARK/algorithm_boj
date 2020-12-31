@@ -2,7 +2,7 @@ package silver;
 
 import java.io.*;
 
-// 수 정렬하기3
+// 수 정렬하기 3 - 카운팅 정렬
 public class s_10989 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
