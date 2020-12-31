@@ -36,10 +36,10 @@ public class s_11723 {
                     k = toggle(n, k);
                     break;
                 case "all":
-                    k = all(k);
+                    k = all();
                     break;
                 case "empty":
-                    k = empty(k);
+                    k = empty();
                     break;
             }
         }
@@ -62,21 +62,15 @@ public class s_11723 {
     }
 
     public static int toggle(int n, int k) {
-        if (check(n, k) == 0) {
-            k = add(n, k);
-        } else {
-            k = remove(n, k);
-        }
+        k ^= (1 << n - 1);
         return k;
     }
 
-    public static int all(int k) {
-        k |= ~k;
-        return k;
+    public static int all() {
+        return (1 << 20) - 1;
     }
 
-    public static int empty(int k) {
-        k &= ~k;
-        return k;
+    public static int empty() {
+        return 0;
     }
 }
