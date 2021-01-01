@@ -3,19 +3,17 @@ package silver;
 import java.io.*;
 import java.util.*;
 
-// 체스판 다시 칠하기
+// 체스판 다시 칠하기 - 브루트포스
 public class s_1018 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String size = br.readLine();
-        StringTokenizer st = new StringTokenizer(size, " ");
+
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
 
-        Vector<Integer> change = new Vector<Integer>();
+        Vector<Integer> change = new Vector<>();
         String[] s = new String[n];
-        char[][] board = new char[n][m];
-
         for (int i = 0; i < n; i++) {
             s[i] = br.readLine();
         }
@@ -23,6 +21,7 @@ public class s_1018 {
         // 체스판 이동
         for (int r = 0; r < n - 7; r++) {
             for (int c = 0; c < m - 7; c++) {
+
                 // 체스판 한 장씩 체크
                 int cnt = 0;
                 char idx = s[r].charAt(c);
@@ -44,6 +43,7 @@ public class s_1018 {
                     }
                 }
                 change.add(cnt);
+
                 // 색 반전
                 change.add(64 - cnt);
             }
