@@ -3,7 +3,7 @@ package bronze;
 import java.io.*;
 import java.util.*;
 
-// 블랙잭스 - 브루트포스
+// 블랙잭 - 브루트포스
 public class b_2798 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
