@@ -21,8 +21,7 @@ public class s_11866 {
         while (!queue.isEmpty()) {
             int cnt = k;
             for (int j = cnt; cnt > 1; cnt--) {
-                queue.offer(queue.peek());
-                queue.remove();
+                queue.offer(queue.poll());
             }
             sb.append(queue.poll()).append(", ");
         }
